@@ -70,14 +70,12 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para ti Luz, el amor de mi vida y la luz de mis ojos 
-Me siento contento y agradecido con Dios por formar parte de tu vida
-Se que a veces peleamos pero eso jamás nos va a separar cierto...
-Yo solo quiero estar contigo y con nadie más...
-Me siento un niñito a tu lado <3 
-Este 14 de febrero no solo festejamos el dia del amor (San valentin xD)
-Si no que ya cumplimos 7 meses juntos
-Osea 7 meses a tu lado amor mio, Te amo mucho muchito `;  } else {
+    text = `Para ti Luz, el amor de mi vida y la luz de mis ojos
+    Se que a veces peleamos pero eso jamás nos va a separar cierto...
+    Yo solo quiero estar contigo y con nadie más...Me siento un niñito a tu lado <3 
+    Este 14 de febrero no solo festejamos el dia del amor (San valentin xD)
+    Si no que ya cumplimos 7 meses juntos
+    Osea 7 meses a tu lado amor mio, Te amo mucho muchito `;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
